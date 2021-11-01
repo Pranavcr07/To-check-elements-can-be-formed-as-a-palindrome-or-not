@@ -1,0 +1,25 @@
+no_of_count=256
+def cfp(st):
+   count=[0]*(no_of_count)
+   for i in range(0, len(st)):
+      count[ord(st[i])]=count[ord(st[i])]+1
+      odd=0
+   for i in range(0,no_of_count):
+     if(count[i]&1):
+        odd=odd+1
+     if(odd>1):
+        return False
+   return True
+if(cfp("geeksforgeeks")):
+  print("Yes")
+else:
+  print("No")
+if(cfp("geeksogeeks"):
+  print("Yes")
+else:
+  print("No")
+
+  
+
+   
+      
